@@ -2,15 +2,15 @@ class UsersCRUD:
     def __init__(self):
         self.users = []
 
-    def create_user(self, name, age):
+    def create_user(self, name, age): 
         user = {"name": name, "age": age}
         self.users.append(user)
         return user
 
-    def read_users(self):
+    def read_users(self):  
         return self.users
 
-    def update_user(self, index, name, age):
+    def update_user(self, index, name, age): 
         if 0 <= index < len(self.users):
             self.users[index]["name"] = name
             self.users[index]["age"] = age
